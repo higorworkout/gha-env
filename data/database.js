@@ -1,6 +1,5 @@
 import { MongoClient } from 'mongodb';
 
-import { MongoClient } from 'mongodb';
 
 const {
   MONGODB_USERNAME,
