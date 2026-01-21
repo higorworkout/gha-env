@@ -7,7 +7,7 @@ on:
 
 env:  
   MONGODB_CLUSTER_ADDRESS: mern.q5ozmvu.mongodb.net
-  MONGODB_USERNAME: higor15nwa
+  MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
   MONGODB_PASSWORD: qi9JWUjZbwk*K%w
   PORT: 3000
   MONGODB_DB_NAME: gha-demo
