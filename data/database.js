@@ -1,5 +1,7 @@
 import { MongoClient } from 'mongodb';
 
+import { MongoClient } from 'mongodb';
+
 const {
   MONGODB_USERNAME,
   MONGODB_PASSWORD,
@@ -21,7 +23,7 @@ console.log('Trying to connect to db');
 
 try {
   await client.connect();
-  await client.db(dbName).command({ ping: 1 });
+  await client.db(MONGODB_DB_NAME).command({ ping: 1 });
   console.log('Connected successfully to server');
 } catch (error) {
   console.log('Connection failed.');
